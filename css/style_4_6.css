@@ -1,0 +1,542 @@
+/* Styles for page4 */
+#page4 {
+  background: radial-gradient(circle at 5% 80%, #4d0010 0%, transparent 30%),
+              radial-gradient(circle at 95% 10%, #4d0010 0%, transparent 30%),
+              linear-gradient(135deg, #000 0%, #000 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5%;
+  font-family: Arial, sans-serif;
+}
+
+.page4-container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page4-left {
+  flex: 1 1 50%;
+  color: #fff;
+}
+
+.page4-left h2 {
+  font-family: 'UTM Arial';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.page4-left .red-text {
+  color: #e50914;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.page4-left .white-text {
+  font-weight: 700;
+}
+
+.page4-pills {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pill {
+  font-family: 'Lexend', sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.red-pill {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.date-pill {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.page4-list {
+  list-style: disc inside;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  padding-right: 2rem;
+}
+
+.page4-list li {
+  margin-bottom: 1rem;
+}
+
+.page4-right {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.image-container {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+  display: block;
+}
+
+.foreground-image {
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
+  display: block;
+}
+
+.igem-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.7);
+  margin-top: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .image-container {
+    width: 400px;
+  }
+  .foreground-image {
+    bottom: -100px;
+    left: -100px;
+    width: 40%;
+  }
+  .igem-logo {
+    width: 100px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page4-right {
+    gap: 1.5rem;
+  }
+  .image-container {
+    width: 100%;
+    max-width: 350px;
+  }
+  .foreground-image {
+    bottom: -80px;
+    left: -80px;
+    width: 35%;
+  }
+  .igem-logo {
+    width: 90px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    max-width: 320px;
+  }
+  .foreground-image {
+    bottom: -100px;
+    left: -30px;
+    width: 45%;
+  }
+  .igem-logo {
+    width: 80px;
+  }
+}
+
+
+/* Styles for page5 */
+#page5 {
+  background: radial-gradient(circle at 5% 80%, #4d0010 0%, transparent 30%),
+              radial-gradient(circle at 95% 10%, #4d0010 0%, transparent 30%),
+              linear-gradient(135deg, #000 0%, #000 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5%;
+  font-family: Arial, sans-serif;
+}
+
+.page5-container {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.page5-heading {
+  font-family: 'UTM Arial', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.page5-heading .red-text {
+  color: #e50914;
+  font-weight: 700;
+}
+
+.page5-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.page5-left,
+.page5-right {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-images {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.phone-img {
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.page5-caption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  /* Page4: chuyển sang cột dọc */
+  .page4-container {
+    flex-direction: column;
+    height: auto; /* để container co dãn theo nội dung */
+  }
+  .page4-left,
+  .page4-right {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  /* Logo igem xuống bên dưới, căn giữa */
+  .page4-right .igem-logo {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  /* Page5: chuyển content thành 1 cột */
+  .page5-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .page5-left,
+  .page5-right {
+    width: 100%;
+  }
+  .phone-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .phone-img {
+    width: 150px;
+    height: auto;
+  }
+  .video-wrapper {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+/* Mobile và dưới 768px */
+@media screen and (max-width: 768px) {
+  /* Giảm padding chung */
+  #page4,
+  #page5 {
+    padding: 2rem 3%;
+  }
+
+  /* Page4: thu nhỏ font và khoảng cách */
+  .page4-left h2 {
+    font-size: 2rem;
+  }
+  .page4-pills {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .pill {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .page4-list {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Page5: thu nhỏ tiêu đề và khoảng cách */
+  .page5-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .page5-caption {
+    font-size: 1rem;
+  }
+}
+
+/* --- Page 6: Quản lý Fanpage --- */
+#page6 {
+  background: radial-gradient(circle at 5% 80%, #4d0010 0%, transparent 30%),
+              radial-gradient(circle at 95% 10%, #4d0010 0%, transparent 30%),
+              linear-gradient(135deg, #000 0%, #000 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5%;
+  font-family: Arial, sans-serif;
+}
+
+.page6-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.page6-header-container {
+  align-self: center;
+  text-align: center;
+}
+
+.page6-content {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.page6-list {
+  flex: 1 1 45%;
+}
+
+.page6-right {
+  flex: 1 1 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page6-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.7);
+}
+
+.page6-left {
+  flex: 1 1 45%;
+}
+
+.page6-header {
+  font-family: 'UTM Arial', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.page6-header .red-bold {
+  font-style: italic;
+  color: #e50914;
+  font-weight: 700;
+}
+
+.page6-header em {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 3rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.page6-pills {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.pill {
+  font-family: 'Lexend', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.red-pill6 {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.date-pill6 {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.page6-list {
+  list-style: disc inside;
+  color: #ddd;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding-right: 2rem;
+}
+
+.page6-list li {
+  margin-bottom: 1rem;
+}
+
+.page6-right {
+  flex: 1 1 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page6-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.7);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .page6-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page6-left,
+  .page6-right {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .page6-right img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Mobile và dưới 768px */
+@media screen and (max-width: 768px) {
+  /* Giảm padding chung */
+  #page6 {
+    padding: 2rem 3%;
+  }
+
+  /* Thu nhỏ tiêu đề */
+  .page6-header {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .page6-header em {
+    font-size: 2.5rem;
+  }
+
+  /* Pills xếp dọc, thu nhỏ */
+  .page6-pills {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .pill {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Nội dung chuyển cột dọc */
+  .page6-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Danh sách li thu nhỏ */
+  .page6-list {
+    padding-right: 0;
+    font-size: 1rem;
+  }
+  .page6-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  /* Ảnh full-width */
+  .page6-right img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
