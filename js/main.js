@@ -1,20 +1,3 @@
-// Handle header scroll behavior
-const header = document.querySelector('.main-header');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    // Add/remove scrolled class based on scroll position
-    if (currentScroll > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-    
-    lastScroll = currentScroll;
-});
-
 // Handle navigation item clicks
 const navItems = document.querySelectorAll('.main-nav li');
 navItems.forEach((item, index) => {
@@ -67,7 +50,7 @@ function navigateToPage(pageId) {
     pages.forEach(page => {
         page.classList.remove('active');
     });
-    
+
     // Show selected page
     const targetPage = document.getElementById(pageId);
     if (targetPage) {
@@ -88,10 +71,11 @@ function navigateToPage(pageId) {
     if (pageId === 'page2') {
         const p = targetPage.querySelector('p');
         if (p) {
-            const fullText = "Là một Gen Z đam mê truyền thông, đang tìm hiểu chính mình giữa thế giới sáng tạo rộng lớn – không ngừng học hỏi, thử nghiệm và trưởng thành qua từng câu chữ, từng chiến dịch và những lần dám bước ra khỏi vùng an toàn. Tôi từng đảm nhiệm nhiều vai trò như quản lý fanpage, viết nội dung, thiết kế cơ bản và triển khai chiến dịch đa kênh.";
+            const fullText = "Là một Gen Z đam mê truyền thông, đang tìm hiểu chính mình giữa thế giới sáng tạo rộng lớn – không ngừng học hỏi, thử nghiệm và trưởng thành qua từng câu chữ, từng chiến dịch và những lần dám bước ra khỏi vùng an toàn. Tôi từng đảm nhiệm nhiều vai trò như quản lý fanpage, viết nội dung, thiết kế cơ bản và triển khai chiến dịch đa kênh.\n\nVới tôi, truyền thông không chỉ là truyền tải thông điệp, mà là xây dựng sự kết nối thực sự giữa thương hiệu và cộng đồng. Một chiến dịch không cần ồn ào, nhưng phải đúng người, đúng thời điểm và đủ sâu để được nhớ đến.";
             typeText(p, fullText, 2500);
         }
     }
+
 }
 
 window.addEventListener('hashchange', () => {
