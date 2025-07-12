@@ -41,31 +41,6 @@ main {
   justify-content: center;
 }
 
-.explore-portfolio-btn {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #970f16;
-  color: rgb(212, 195, 195);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 0.05em;
-  padding: 15px 60px;
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  display: inline-block;
-  text-align: center;
-}
-
-.explore-portfolio-btn:hover {
-  background-color: #b0060f;
-  box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
-}
-
 /* Main Header Styles */
 .main-header {
   width: 100%;
@@ -322,11 +297,16 @@ main {
 .toc-label {
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
+  text-decoration: none;
   font-size: 1.5rem;
   color: #fff;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.01em;
+}
+
+.toc-grid a {
+  text-decoration: none;
 }
 
 /* Responsive styles for page1 */
