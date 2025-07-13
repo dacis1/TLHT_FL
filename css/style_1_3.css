@@ -1,3 +1,61 @@
+/* Mobile nav dropdown styles */
+.mobile-nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #222;
+  box-shadow: 0 4px 16px #0008;
+  border-radius: 0 0 8px 8px;
+  z-index: 2001;
+  min-width: 180px;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+.mobile-nav-dropdown button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Lexend', Arial, sans-serif;
+}
+.mobile-nav-dropdown button:hover {
+  background: #e50914;
+  color: #fff;
+}
+.mobile-nav-dropdown.show {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-nav-dropdown {
+    right: 0.5rem;
+    left: auto;
+    min-width: 60vw;
+    border-radius: 0 0 12px 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #page0 {
+    padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #page0 .banner img {
+    max-width: 90vw;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    transform: scale(1.1);
+  }
+}
 /* Reset & base layout */
 * {
   margin: 0;
@@ -348,7 +406,7 @@ main {
 
   .toc-grid {
     gap: 0.5rem;
-    max-width: 65%;
+    max-width: 90%;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
 
