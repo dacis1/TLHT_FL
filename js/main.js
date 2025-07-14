@@ -173,15 +173,6 @@ popup.querySelector('.popup-content').addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const bannerImage = document.querySelector('.banner img');
-    if (bannerImage) {
-        // Trigger zoom animation by adding the zoomed class
-        setTimeout(() => {
-            bannerImage.classList.add('zoomed');
-        }, 0);
-    }
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainHeader = document.querySelector('.main-header');

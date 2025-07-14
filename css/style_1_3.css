@@ -63,6 +63,7 @@
   box-sizing: border-box;
 }
 
+
 html,
 body {
   height: 100%;
@@ -98,7 +99,13 @@ main {
   align-items: center;
   justify-content: center;
 }
-
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(1.4);
+  transition: transform 0.3s;
+}
 /* Main Header Styles */
 .main-header {
   width: 100%;
