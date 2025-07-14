@@ -49,7 +49,7 @@
     justify-content: flex-start;
   }
   #page0 .banner img {
-    max-width: 90vw;
+    max-width: 100%;
     height: auto;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
@@ -504,9 +504,6 @@ main {
   background: rgba(109, 109, 110, 0.9);
 }
 
-p {
-  white-space: pre-line;
-}
 @media screen and (max-width: 768px) {
   #page2 {
     flex-direction: column;
@@ -852,7 +849,7 @@ p {
 .skill-text h3 {
   font-family: 'Lexend', sans-serif;
   font-size: 1.2em;
-  margin: 0 0 0.3em 0;
+  margin: 0.5em 0 0.3em 0;
 }
 
 .skill-text p {

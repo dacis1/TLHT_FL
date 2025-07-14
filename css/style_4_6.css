@@ -13,10 +13,10 @@
 }
 
 .page4-container {
-  max-width: 1300px;
+  max-width: 1500px;
   width: 100%;
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -96,7 +96,7 @@
 }
 
 .image-container {
-  width: 500px;
+  width: 650px;
   max-width: 100%;
   position: relative;
 }
@@ -421,6 +421,7 @@
   padding-right: 2rem;
   gap: 1rem;
   width: 100%;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
