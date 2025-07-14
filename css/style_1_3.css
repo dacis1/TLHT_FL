@@ -12,6 +12,7 @@
   flex-direction: column;
   padding: 0.5rem 0;
 }
+
 .mobile-nav-dropdown button {
   width: 100%;
   background: none;
@@ -24,10 +25,12 @@
   transition: background 0.2s;
   font-family: 'Lexend', Arial, sans-serif;
 }
+
 .mobile-nav-dropdown button:hover {
   background: #e50914;
   color: #fff;
 }
+
 .mobile-nav-dropdown.show {
   display: flex;
 }
@@ -40,6 +43,7 @@
     border-radius: 0 0 12px 12px;
   }
 }
+
 @media screen and (max-width: 480px) {
   #page0 {
     padding: 0.5rem 0.2rem 0.2rem 0.2rem;
@@ -48,6 +52,7 @@
     align-items: center;
     justify-content: flex-start;
   }
+
   #page0 .banner img {
     max-width: 100%;
     height: auto;
@@ -56,6 +61,7 @@
     transform: scale(1.1);
   }
 }
+
 /* Reset & base layout */
 * {
   margin: 0;
@@ -99,6 +105,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .banner-img {
   width: 100%;
   height: auto;
@@ -106,6 +113,7 @@ main {
   transform: scale(1.4);
   transition: transform 0.3s;
 }
+
 /* Main Header Styles */
 .main-header {
   width: 100%;
@@ -224,6 +232,7 @@ main {
   font-size: 1rem !important;
   margin-left: -1rem;
 }
+
 .header-icons img {
   color: #fff;
   width: 30px;
@@ -231,6 +240,7 @@ main {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .main-header {
@@ -422,16 +432,16 @@ main {
   }
 
   .toc-thumb {
-  position: relative;
-  width: 100%;
-  height: 280px;
-  margin-bottom: 1rem;
-  display: block;
-}
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 1rem;
+    display: block;
+  }
 
-.toc-thumb img {
-  border-radius: 0.4rem;
-}
+  .toc-thumb img {
+    border-radius: 0.4rem;
+  }
 
   .toc-label {
     font-size: 0.9rem;
@@ -808,122 +818,42 @@ main {
 
 /* Styles for page3 - Kỹ năng section */
 #page3 {
-  background: radial-gradient(circle at 5% 80%, #4d0010 0%, transparent 30%),
+  background:
+    radial-gradient(circle at 5% 80%, #4d0010 0%, transparent 30%),
     radial-gradient(circle at 95% 10%, #4d0010 0%, transparent 30%),
     linear-gradient(135deg, #000 0%, #000 100%);
   color: #fff;
   padding: 1rem 5%;
-  /* giảm khoảng trắng 2 bên */
   font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* căn giữa toàn cục */
+  /* căn giữa ngang */
   justify-content: center;
-  /* thêm căn giữa dọc */
+  /* căn giữa dọc */
+}
+
+#page3 .skill-item img {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  /* 1 line xám dưới mỗi image */
 }
 
 #page3 h2 {
+  max-width: 50%;
+  margin-left: 8%;
   align-self: flex-start;
-  font-family: 'UTM Arial', sans-serif;
+  font-family: 'UTM Arial';
+  font-size: 4.2rem;
   font-style: italic;
-  color: white;
-  font-weight: bolder;
-  font-size: 4em;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
-}
-
-.skill-list {
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-.skill-number {
-  font-size: 2em;
-  width: 2em;
-}
-
-.skill-item img {
-  width: 80px;
-  height: 60px;
-  object-fit: cover;
-  margin-right: 1em;
-  border-radius: 4px;
-}
-
-.skill-text {
-  flex-grow: 1;
-}
-
-.skill-text h3 {
-  font-family: 'Lexend', sans-serif;
-  font-size: 1.2em;
-  margin: 0.5em 0 0.3em 0;
-}
-
-.skill-text p {
-  font-family: 'Lexend', sans-serif;
-  margin: 0;
-  font-size: 1.1em;
-  line-height: 1.3em;
-}
-
-.skill-time {
-  width: 3.5em;
-  text-align: right;
-  font-weight: bold;
-}
-
-/* Animation for skill items */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #555;
-  padding: 1.3em 0;
-  opacity: 0;
-  animation-name: fadeInUp;
-  animation-duration: 0.6s;
-  animation-fill-mode: forwards;
-}
-
-.skill-item:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.skill-item:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.skill-item:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.skill-item:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-@media screen and (max-width: 480px) {
-  #page3 h2 {
-    font-size: 2rem;
-    color: white;
-    font-weight: bolder;
-    margin-bottom: 0em;
-    margin-top: 1em;
-  }
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* giống page2 h1 */
 }
 
 /* Font face for font heading now 71 78 */
