@@ -699,12 +699,16 @@ main {
 }
 
 .popup-info h3 {
+  font-family: 'Lexend', sans-serif;
+  text-align: justify;
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #fff;
 }
 
 .popup-info p {
+  font-family: 'Lexend', sans-serif;
+  text-align: justify;
   color: #fff;
   line-height: 1.6;
   margin-bottom: 15px;
